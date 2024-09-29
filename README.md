@@ -19,6 +19,6 @@ In order to use this librabry, one has to include ```constant_weight_codec.h``` 
 - The hardware requirement is an x86_64 CPU supporting the ```movnti```, ```mfence```, and ```rdrand``` instructions to be able to run the library, plus the ```rtdscp``` instruction to perform the timing measurements. Any Intel CPU starting from the Ivy Bridge generation fulfills these requirements, and so does any AMD CPU starting from the Excavator generation, including all the Zen and Zen2 CPUs.
 
 ## How to build
-In order to build one simply has to enter the ```build```subdirectory in the ```constant_weight_library``` directory and run ```cmake ../ && make```.
+In order to build one simply has to make and enter a ```build``` subdirectory in the ```constant_weight_library``` directory and run ```cmake ../ && make```.
 
 This will create four binaries performing the benchmarks recreating the results in Table 1 of the paper, and the t-statistics reported in the evaluation section. It is advisable, although not mandatory, to disable any frequency scaling/boosting  mechanism on the test machine, if possible.
